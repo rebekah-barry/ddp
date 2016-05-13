@@ -55,3 +55,16 @@ h1.heading-large {
   margin-bottom: 25px;
   border-bottom: 1px solid #bfc1c3;
 }
+
+.phase-tag-live {
+  margin: 0 8px 0 0;
+  padding: 2px 5px 0;
+
+  @include bold-16($line-height: 20 / 16);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  color: $white;
+  background-color: $grass-green;
+}
