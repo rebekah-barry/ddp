@@ -8,6 +8,7 @@
         <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
         <nav id="proposition-menu">
           <a href="/" id="proposition-name">{% if serviceName %} {{ serviceName }} {% endif %}</a>
+          {% if userFlow %}
           <ul id="proposition-links">
             <li><a href="/user-flow/">Home</a></li>
             <li><a href="/user-flow/news">Latest news archive</a></li>
@@ -24,6 +25,7 @@
             <li><a href="/user-flow/dit08">Management Information</a></li>
             <li><a href="/user-flow/atoz-ddp">A-Z</a></li>
           </ul>
+          {% endif %}
         </nav>
       </div>
     </div>
