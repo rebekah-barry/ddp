@@ -68,3 +68,50 @@ h1.heading-large {
   color: $white;
   background-color: $grass-green;
 }
+
+#timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: 100%;
+  width: 5px;
+  background-color: $grey-3;
+}
+.timeline-block {
+  margin-bottom: 60px;
+  border: 5px solid $white;
+  position: relative;
+  z-index: 2;
+}
+.timeline-date {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+}
+.timeline-content a {
+  padding: 15px 15px 0px 15px;
+  border: 1px solid $grey-2;
+  background-color: $grey-4;
+  box-sizing: border-box;
+  display: block;
+}
+.timeline-content.done a {
+  border-left: 5px solid $govuk-blue;
+}
+.timeline-content.new a {
+  border-left: 5px solid $grass-green;
+}
+.timeline-content.started a {
+  border-left: 5px solid $yellow;
+}
+.timeline-content.overdue a {
+  border-left: 5px solid $red;
+}
