@@ -1,0 +1,97 @@
+{% extends "layout_unbranded.html" %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Organise staffing
+        <span class="heading-secondary">
+          Complete by: 20 June | Suggested time: 60 mins
+        </span>
+      </h1>
+
+
+      <p class="lede">
+        Our estimate says that you’ll need to train xxx full time equivalent Work Coaches to deliver Universal Credit Full Service.
+      </p>
+
+      <p>
+        This is a recommendation - you can choose a different amount depending on the needs of your Jobcentre.
+      </p>
+
+      <h2 class="heading-medium">
+        You’ll need to:
+      </h2>
+
+      <ol class="list list-number">
+        <li>
+          Decide which Work Coaches will train to deliver Universal Credit Full Service and let them know
+        </li>
+        <li>
+          Organise cover for these staff for the time they’re on training
+        </li>
+      </ol>
+
+      <p>
+        It’s up to you how you decide which Work Coaches will work on Universal Credit Full Service. You might want to ask for volunteers, or use your judgment to decide who would be confident to be trained first.
+      </p>
+
+      <h2 class="heading-medium">
+        Checklist:
+      </h2>
+
+      <form action="/" method="" class="form">
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Checklist:</legend>
+
+            <label for="step__1" class="block-label">
+              <input type="checkbox" name="step__1" value="Done" id="step__1">
+              We have decided how many members of staff need to be trained
+            </label>
+
+            <label for="step__2" class="block-label">
+              <input type="checkbox" name="step__2" value="Done" id="step__2">
+              We have identified which members of staff will be trained
+            </label>
+
+            <label for="step__3" class="block-label">
+              <input type="checkbox" name="step__3" value="Done" id="step__3">
+              We have let them know
+            </label>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Complete" disabled>
+        </div>
+
+      </form>
+
+
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Supporting content</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">Related link</a></li>
+            <li><a href="#">Related link</a></li>
+            <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
