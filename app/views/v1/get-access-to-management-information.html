@@ -1,0 +1,132 @@
+{% extends "layout_unbranded.html" %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Get access to management information
+        <span class="heading-secondary">
+          Complete by: 20 June | Suggested time: 60 mins
+        </span>
+      </h1>
+
+      <p class="lede">
+        Request access for you and your colleagues to use the new system for management information on Universal Credit full service.
+      </p>
+
+      <p>
+        There aren’t different levels of access rights - everyone with access can see all the reports.
+      </p>
+
+      <div class="list-item-wrapper-vertical">
+        <div class="form-group-compound">
+          <h2 class="heading-medium">Item 1</h2>
+
+          <div class="form-group">
+            <label class="form-label" for="field-1">
+              Name
+            </label>
+
+            <input type="text" class="form-control" id="field-1" name="field-1">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="field-2">
+              Job title
+            </label>
+
+            <input type="text" class="form-control" id="field-2" name="field-2">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="field-3">
+              Email address
+            </label>
+
+            <input type="text" class="form-control" id="field-3" name="field-3">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="field-4">
+              Office they work in
+            </label>
+
+            <input type="text" class="form-control" id="field-4" name="field-4">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button id="add-button" class="button button-secondary">Add another</button>
+      </div>
+
+      <p>
+        Thanks, everyone will get 2 emails with their sign in details within 3 days.
+      </p>
+
+      <p>
+        If you have any problems contact the Management Information Strategy Team - digitalmi.helpdesk@dwp.gsi.gov.uk
+      </p>
+
+      <h2 class="heading-medium">
+        Checklist:
+      </h2>
+
+      <form action="/" method="" class="form">
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Checklist:</legend>
+
+            <label for="step__1" class="block-label">
+              <input type="checkbox" name="step__1" value="Done" id="step__1">
+              I’ve given the details of all staff that need access
+            </label>
+
+            <label for="step__2" class="block-label">
+              <input type="checkbox" name="step__2" value="Done" id="step__2">
+              Everyone I’ve requested access for has been emailed their sign in details
+            </label>
+
+            <label for="step__3" class="block-label">
+              <input type="checkbox" name="step__3" value="Done" id="step__3">
+              I’ve read and understood the <a href="">User Access Control Policy</a>
+            </label>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Complete" disabled>
+        </div>
+
+      </form>
+
+
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Supporting content</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">
+              The MI reports available (word)</a>
+            </a></li>
+            <li><a href="#">
+              Information Builders WebFOCUS user guide (pdf)
+            </a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
