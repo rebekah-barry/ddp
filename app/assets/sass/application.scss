@@ -38,8 +38,21 @@
   }
 }
 
-// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+// Things that *should* be in base.scss
+body {
+  border-top: 2px solid $black;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+// Secondary button
+.button-secondary {
+  @include button($grey-3);
+}
+
+// DDP styles
 hr {
   display: block;
   background: none;
@@ -49,20 +62,18 @@ hr {
   margin-bottom: 25px;
   padding: 0;
 }
-
 .phase-tag-live {
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
-
   @include bold-16($line-height: 20 / 16);
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
-
   color: $white;
   background-color: $grass-green;
 }
 
+// Timeline styles
 #timeline {
   position: relative;
   padding: 2em 0;
