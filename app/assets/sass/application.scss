@@ -60,6 +60,11 @@ img {
 }
 .button-secondary {
   @include button($grey-3);
+
+  @include media (mobile) {
+    width: 100%;
+    padding: 10px 15px 10px;
+  }
 }
 
 // Add items to a list pattern

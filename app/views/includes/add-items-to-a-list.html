@@ -3,7 +3,7 @@
   {% for i in range(1, 11) -%}
     <li id="item-row-{{i}}" class="item-row {% if not loop.first and not answers['item' + i] %} js-hidden {% endif %}">
 
-      <h2 class="heading-medium">Item {{i}} </h2>
+      <h2 class="heading-medium">Person {{i}} </h2>
 
       {% if not loop.first %}
         <a href="#" class="remove">Remove this</a>
@@ -37,7 +37,7 @@
   {% endfor %}
 
   <li class="form-group">
-    <button href="add-another" class="button button-secondary add-another" data-target="item-row">Add another</button>
+    <a href="add-another" class="add-another" data-target="item-row">Add another person</a>
   </li>
 
 </ul>
