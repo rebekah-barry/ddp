@@ -34,6 +34,79 @@
         Request access to all 3 systems for your Universal Credit full service staff. Just give the details of staff who will be working on the service - not staff who might do in the future.
       </p>
 
+      <form action="" method="" class="form">
+
+        <ul class="list-user-input">
+
+          {% for i in range(1, 11) -%}
+            <li id="item-row-{{i}}" class="item-row {% if not loop.first and not answers['item' + i] %} js-hidden {% endif %}">
+
+              <h2 class="heading-medium">Person {{i}} </h2>
+
+              {% if not loop.first %}
+                <a href="#" class="remove">Remove this</a>
+              {% endif %}
+
+              <fieldset>
+                <div class="form-group">
+                  <label class="form-label" for="field-1">Name</label>
+                  <input type="text" class="form-control" id="field-1">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-2">Email address</label>
+                  <input type="text" class="form-control" id="field-2">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-3">Staff number</label>
+                  <input type="text" class="form-control" id="field-3">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-4">Training dates</label>
+                  <input type="text" class="form-control" id="field-4">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-5">Home office</label>
+                  <input type="text" class="form-control" id="field-5">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-6">Manager</label>
+                  <input type="text" class="form-control" id="field-6">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-7">Job role</label>
+                  <input type="text" class="form-control" id="field-7">
+                </div>
+              </fieldset>
+
+              <hr>
+
+            </li>
+          {% endfor %}
+
+          <li class="form-group">
+            <a href="add-another" class="add-another" data-target="item-row">Add another person</a>
+          </li>
+
+        </ul>
+
+        <div class="form-group">
+          <input type="submit" class="button button-secondary button-save" value="Save and continue" name="saveAndcontinue">
+        </div>
+
+      </form>
+
+      <div id="alert-success" class="panel panel-border-wide alert-success js-hidden">
+        <p class="bold-small">
+          Thanks, everyone will get 2 emails with their sign in details within 3 days.
+        </p>
+      </div>
+
       <h2 class="heading-medium">
         Checklist
       </h2>
