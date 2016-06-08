@@ -1,3 +1,21 @@
+// Add an item to a list
+$(".add-another").click(function() {
+    var dataTarget = $(this).attr('data-target');
+		$("li."+dataTarget+".js-hidden").first().removeClass('js-hidden');
+
+    if( $("li."+dataTarget+".js-hidden").length === 0) {
+      $(this).addClass('js-hidden');
+    }
+		return false;
+	});
+
+  $('.remove').click(function() {
+		$(this).parent().addClass("js-hidden");
+		return false;
+	});
+
+
+// Prototype kit functions
 function ShowHideContent() {
   var self = this;
 
