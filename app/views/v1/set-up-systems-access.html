@@ -1,0 +1,105 @@
+{% extends "layout_unbranded.html" %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Set up systems access
+        <span class="heading-secondary">
+          Complete by: 26 June | Suggested time: 30 mins
+        </span>
+      </h1>
+
+      <p class="lede">
+        All staff working on Universal Credit full service will need:
+      </p>
+
+      <ul class="list list-bullet">
+        <li>
+          the Universal Credit full service system
+        </li>
+        <li>
+          the Universal Credit full service training system
+        </li>
+        <li>
+          Booking bug
+        </li>
+      </ul>
+
+      <p>
+        Request access to all 3 systems for your Universal Credit full service staff. Just give the details of staff who will be working on the service - not staff who might do in the future.
+      </p>
+
+      <h2 class="heading-medium">
+        Checklist
+      </h2>
+
+      <form action="task-complete" method="" class="form">
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Checklist</legend>
+
+            <label for="step__1" class="block-label">
+              <input type="checkbox" name="step__1" value="Done" id="step__1">
+              I’ve given the details of all staff that need access
+            </label>
+
+            <label for="step__2" class="block-label">
+              <input type="checkbox" name="step__2" value="Done" id="step__2">
+              I’ve checked with my Learning and Development Officer to make sure all staff doing training have been entered
+            </label>
+
+            <label for="step__3" class="block-label">
+              <input type="checkbox" name="step__3" value="Done" id="step__3">
+              everyone I’ve requested access for has the Universal Credit full service system and they have added the shortcut to their desktop</a>
+            </label>
+
+            <label for="step__4" class="block-label">
+              <input type="checkbox" name="step__4" value="Done" id="step__4">
+              everyone I’ve requested access for has the Universal Credit training system</a>
+            </label>
+
+            <label for="step__5" class="block-label">
+              <input type="checkbox" name="step__5" value="Done" id="step__5">
+              everyone I’ve requested access for has Booking Bug</a>
+            </label>
+
+          </fieldset>
+        </div>
+
+        <p><a href="">Contact us</a> if you have any problems.</p>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Complete">
+        </div>
+
+      </form>
+
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Supporting content</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">
+              How to add the Universal Credit full service shortcut to your desktop
+            </a></li>
+            <li><a href="#">
+              How to access the training environment
+            </a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
