@@ -68,6 +68,10 @@ img {
 }
 
 // Add items to a list pattern
+.list-user-input li h2 {
+  float: left;
+  margin-top: 0;
+}
 .remove {
   float: right;
 }
