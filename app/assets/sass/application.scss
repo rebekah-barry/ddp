@@ -47,13 +47,19 @@ img {
   height: auto;
 }
 
-// Secondary button
+// buttons
+.button {
+  @include button ($button-colour);
+  @include box-sizing (border-box);
+  vertical-align: top;
+
+  @include media (mobile) {
+    width: 100%;
+    padding: 10px 15px 10px;
+  }
+}
 .button-secondary {
   @include button($grey-3);
-
-  @media (max-width: 640px) {
-    width: auto;
-  }
 }
 
 // Add items to a list pattern
