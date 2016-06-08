@@ -61,6 +61,12 @@ img {
   float: right;
 }
 
+// Alert patterns
+.alert-success {
+  border-color: $turquoise;
+  background-color: mix(white, $turquoise, 90%);
+}
+
 // To-do pattern
 ul.todo li {
   margin: 10px 0;
