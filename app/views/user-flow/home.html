@@ -1,0 +1,35 @@
+{% extends "layout_unbranded.html" %}
+
+{% set userFlow = true %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">DDP Home<span class="font-small"><br>/index.asp</span></h1>
+
+			<ul class="list">
+				<li>Select <a href="imp-list-1">Jobcentre currently delivering UC Live Service</a></li>
+        <hr>
+        <li>Select <a href="imp-list-2">Jobcentre currently not delivering UC</a></li>
+        <hr>
+        <li>Select <a href="imp-list-3">Service centre currently delivering UC Live Service</a></li>
+        <hr>
+        <li>Select <a href="imp-list-4">Service centre - former HMRC site</a></li>
+        <hr>
+        <li>Select <a href="imp-list-5">UC service centre expansion (full service)</a></li>
+        <hr>
+        <li>Select <a href="">Digital implementation instructions grouped by category</a></li>
+        <hr>
+        <li>Select <a href="cil">Continuous improvement and learning (CIL)</a></li>
+        <hr>
+        <li>Select an <a href="folder">individual site delivery plan</a> [[x26 folder links]]</li>
+			</ul>
+
+    </div>
+  </div>
+</main>
+{% endblock %}
