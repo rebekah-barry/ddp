@@ -17,6 +17,9 @@ $('.remove').click(function() {
 $('.button-save').click(function() {
   $(this).closest('form').addClass('js-hidden');
   $('.alert-success').removeClass('js-hidden');
+  $(document.body).animate({
+    'scrollTop': $('#alert-success').offset().top - 10
+}, 160);
   return false;
 });
 
