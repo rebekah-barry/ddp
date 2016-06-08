@@ -29,7 +29,7 @@
           {% for i in range(1, 11) -%}
             <li id="item-row-{{i}}" class="item-row {% if not loop.first and not answers['item' + i] %} js-hidden {% endif %}">
 
-              <h2 class="heading-medium">Person {{i}} </h2>
+              <h2 class="heading-small">Person {{i}} </h2>
 
               {% if not loop.first %}
                 <a href="#" class="remove">Remove this</a>
