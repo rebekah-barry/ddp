@@ -50,6 +50,15 @@ img {
 // Secondary button
 .button-secondary {
   @include button($grey-3);
+
+  @media (max-width: 640px) {
+    width: auto;
+  }
+}
+
+// Add items to a list pattern
+.remove {
+  float: right;
 }
 
 // To-do pattern
