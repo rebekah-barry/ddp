@@ -22,17 +22,21 @@
         There aren’t different levels of access rights - everyone with access can see all the reports.
       </p>
 
-      <form action="/" method="" class="form">
+      <form action="" method="" class="form">
 
-      {% include "includes/add-items-to-a-list.html" %}
+        {% include "includes/add-items-to-a-list.html" %}
 
-      <input type="submit" class="button" value="Save and continue" name="saveAndcontinue">
+        <div class="form-group">
+          <input type="submit" class="button button-save" value="Save and continue" name="saveAndcontinue">
+        </div>
 
       </form>
 
-      <p>
-        Thanks, everyone will get 2 emails with their sign in details within 3 days.
-      </p>
+      <div class="panel panel-border-wide alert-success js-hidden">
+        <p class="bold-small">
+          Thanks, everyone will get 2 emails with their sign in details within 3 days.
+        </p>
+      </div>
 
       <p>
         If you have any problems contact the Management Information Strategy Team - digitalmi.helpdesk@dwp.gsi.gov.uk
