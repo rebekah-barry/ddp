@@ -1,0 +1,40 @@
+{% extends "layout_unbranded.html" %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">To-do</h1>
+
+      <ul class="todo">
+        <li>
+          <a href="/v1/organise-staffing">
+            Organise staffing
+          </a>
+        </li>
+        <li>
+          <a href="/v1/get-access-to-management-information">
+            Get access to management information
+          </a>
+        </li>
+        <li>
+          <a href="/v1/set-up-systems-access">
+            Set up systems access
+          </a>
+        </li>
+      </ul>
+
+      <hr>
+
+      <p style="color:#fff">
+        View <a href="/user-flow/" style="color:#fff;">discovery</a> of the current platform.
+      </p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends "layout_unbranded.html" %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Get access to management information
+        <span class="heading-secondary">
+          Complete by: 26 June | Suggested time: 30 mins
+        </span>
+      </h1>
+
+      <p class="lede">
+        Request access for you and your colleagues to use the new system for management information on Universal Credit full service.
+      </p>
+
+      <p>
+        There aren’t different levels of access rights - everyone with access can see all the reports.
+      </p>
+
+      <form action="" method="" class="form">
+
+        <ul class="list-user-input">
+
+          {% for i in range(1, 11) -%}
+            <li id="item-row-{{i}}" class="item-row {% if not loop.first and not answers['item' + i] %} js-hidden {% endif %}">
+
+              <h2 class="heading-small">Person {{i}} </h2>
+
+              {% if not loop.first %}
+                <a href="#" class="remove">Remove this</a>
+              {% endif %}
+
+              <fieldset>
+                <div class="form-group">
+                  <label class="form-label" for="field-1">Name</label>
+                  <input type="text" class="form-control" id="field-1">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-2">Job title</label>
+                  <input type="text" class="form-control" id="field-2">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-3">Email address</label>
+                  <input type="text" class="form-control" id="field-3">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-4">Office they work in</label>
+                  <input type="text" class="form-control" id="field-4">
+                </div>
+              </fieldset>
+
+              <hr>
+
+            </li>
+          {% endfor %}
+
+          <li class="form-group">
+            <a href="add-another" class="add-another" data-target="item-row">Add another person</a>
+          </li>
+
+        </ul>
+
+        <div class="form-group">
+          <input type="submit" class="button button-secondary button-save" value="Save and continue" name="saveAndcontinue">
+        </div>
+
+      </form>
+
+      <div id="alert-success" class="panel panel-border-wide alert-success js-hidden">
+        <p class="bold-small">
+          Thanks, everyone will get 2 emails with their sign in details within 3 days.
+        </p>
+      </div>
+
+      <p>
+        If you have any problems contact the Management Information Strategy Team - <a href="">digitalmi.helpdesk@dwp.gsi.gov.uk</a>
+      </p>
+
+      <h2 class="heading-medium">
+        Checklist
+      </h2>
+
+      <form action="task-complete" method="" class="form">
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Checklist</legend>
+
+            <label for="step__1" class="block-label">
+              <input type="checkbox" name="step__1" value="Done" id="step__1">
+              I’ve given the details of all staff that need access
+            </label>
+
+            <label for="step__2" class="block-label">
+              <input type="checkbox" name="step__2" value="Done" id="step__2">
+              Everyone I’ve requested access for has been emailed their sign in details
+            </label>
+
+            <label for="step__3" class="block-label">
+              <input type="checkbox" name="step__3" value="Done" id="step__3">
+              I’ve read and understood the <a href="">User Access Control Policy</a>
+            </label>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Complete">
+        </div>
+
+      </form>
+
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Supporting content</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">
+              The MI reports available (word)</a>
+            </a></li>
+            <li><a href="#">
+              Information Builders WebFOCUS user guide (pdf)
+            </a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
