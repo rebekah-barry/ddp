@@ -9,30 +9,85 @@
 
       <h1 class="heading-large">To-do</h1>
 
-      <ul class="todo">
-        <li>
-          <a href="/v1/organise-staffing">
-            Organise staffing
+      <ul class="todo detailed">
+        <li class="done">
+          <a href="">
+            Leadership event <span>Completed 14 May 2016</span>
           </a>
         </li>
-        <li>
-          <a href="/v1/get-access-to-management-information">
-            Get access to management information
+        <li class="overdue">
+          <a href="/v2/organise-staffing">
+            Organise staffing <span>Overdue 1 day</span>
           </a>
+          <p class="font-xsmall">
+            <input type="checkbox" name="step__1" value="Done" id="step__1" checked>
+            we have decided how many members of staff need to be trained
+            <br>
+            <input type="checkbox" name="step__2" value="Done" id="step__2" checked>
+            we have identified which members of staff will be trained
+            <br>
+            <input type="checkbox" name="step__3" value="Done" id="step__3">
+            we have let them know
+          </p>
+          <span class="assigned">Site Manager</span>
+        </li>
+        <li class="overdue">
+          <a href="/v2/get-access-to-management-information">
+            Get access to management information <span>Due today</span>
+          </a>
+          <p class="font-xsmall">
+            <input type="checkbox" name="step__1" value="Done" id="step__1" checked>
+            I’ve given the details of all staff that need access
+            <br>
+            <input type="checkbox" name="step__2" value="Done" id="step__2">
+            everyone I’ve requested access for has been emailed their sign in details
+            <br>
+            <input type="checkbox" name="step__3" value="Done" id="step__3">
+            I’ve read and understood the <a href="">User Access Control Policy</a>
+          </p>
+          <span class="assigned">Site Manager</span>
         </li>
         <li>
-          <a href="/v1/set-up-systems-access">
-            Set up systems access
+          <a href="/v2/set-up-systems-access">
+            Set up systems access <span>Due 24 June 2016</span>
+          </a>
+          <p class="font-xsmall">
+            <input type="checkbox" name="step__1" value="Done" id="step__1">
+            I’ve given the details of all staff that need access
+            <br>
+            <input type="checkbox" name="step__2" value="Done" id="step__2">
+            I’ve checked with my Learning and Development Officer to make sure all staff doing training have been entered
+            <br>
+            <input type="checkbox" name="step__3" value="Done" id="step__3">
+            everyone I’ve requested access for has the Universal Credit full service system and they have added the shortcut to their desktop
+            <br>
+            <input type="checkbox" name="step__4" value="Done" id="step__4">
+            everyone I’ve requested access for has the Universal Credit training system
+            <br>
+            <input type="checkbox" name="step__5" value="Done" id="step__5">
+            everyone I’ve requested access for has Booking Bug
+          </p>
+          <span class="assigned">Site Manager</span>
+        </li>
+        <li>
+          <a href="">
+            Complete learning needs analysis <span>Due 6 July 2016</span>
+          </a>
+        </li>
+        <li class="dependencies">
+          <a href="">
+          Create a learning and development plan <span>Due 24 July 2016</span>
+        </li>
+        <li class="dependencies">
+          <a href="">
+          Complete learning and development <span>Due 4 August 2016</span>
+        </li>
+        <li>
+          <a href="">
+            Review Health & Safety <span>Due 16 August 2016</span>
           </a>
         </li>
       </ul>
-
-      <hr>
-
-      <p style="color:#fff">
-        View <a href="/user-flow/" style="color:#fff;">discovery</a> of the current platform.
-      </p>
-
     </div>
   </div>
 </main>
