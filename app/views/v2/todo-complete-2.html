@@ -1,0 +1,136 @@
+{% extends "layout_unbranded.html" %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+		<section class="column-quarter">
+			<div class="tag done">Done</div>
+			<div class="big_number txt-done">25</div>
+		</section>
+		<section class="column-quarter">
+			<div class="tag risk">At risk</div>
+			<div class="big_number txt-risk">1</div>
+		</section>
+		<section class="column-quarter">
+			<div class="tag mitigation">Behind but OK</div>
+			<div class="big_number txt-mitigation">2</div>
+		</section>
+		<section class="column-quarter">
+			<div class="tag">On track</div>
+			<div class="big_number">10</div>
+		</section>
+	</div>
+
+  <div id="alert-success" class="panel panel-border-wide alert-success">
+    <p class="bold-small">
+      Task complete
+    </p>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Things to-do now</h1>
+
+      Completed items appear in your <a href="journal">journal</a>.
+
+      <ul class="todo detailed">
+        <li class="risk">
+          <a href="/v2/organise-staffing">
+            Organise staffing <span>Overdue 121 days</span>
+          </a>
+          <p class="font-xsmall">
+            <input type="checkbox" name="step__1" value="Done" id="step__1" checked>
+            we have decided how many members of staff need to be trained
+            <br>
+            <input type="checkbox" name="step__2" value="Done" id="step__2" checked>
+            we have identified which members of staff will be trained
+            <br>
+            <input type="checkbox" name="step__3" value="Done" id="step__3">
+            we have let them know
+          </p>
+          <span class="assigned">Site Manager</span>
+        </li>
+        <li class="mitigation">
+          <a href="">
+            Quality assurance framework <span>Overdue 50 days</span>
+          </a>
+        </li>
+        <li class="mitigation">
+          <a href="">
+            Local authority internet and digital support provision <span>Overdue 2 days</span>
+          </a>
+        </li>
+        <li>
+          <a href="/v2/set-up-systems-access">
+            Set up systems access <span>Due 21 June 2016</span>
+          </a>
+          <p class="font-xsmall">
+            <input type="checkbox" name="step__1" value="Done" id="step__1" checked="">
+            I’ve given the details of all staff that need access
+            <br>
+            <input type="checkbox" name="step__2" value="Done" id="step__2" checked="">
+            I’ve checked with my Learning and Development Officer to make sure all staff doing training have been entered
+            <br>
+            <input type="checkbox" name="step__3" value="Done" id="step__3" checked="">
+            everyone I’ve requested access for has the Universal Credit full service system and they have added the shortcut to their desktop
+            <br>
+            <input type="checkbox" name="step__4" value="Done" id="step__4" checked="">
+            everyone I’ve requested access for has the Universal Credit training system
+            <br>
+            <input type="checkbox" name="step__5" value="Done" id="step__5">
+            everyone I’ve requested access for has Booking Bug
+          </p>
+          <span class="assigned">Site Manager</span>
+        </li>
+        <li>
+          <a href="">
+          Engage with delivery partners and stakeholders and social landlords <span>Due 21 June 2016</span>
+        </li>
+        <li>
+          <a href="">
+            Local authority support pack and business readiness certificate <span>Due 21 June 2016</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Revisit learning needs analysis <span>Due 21 June 2016</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Review and update operational activities <span>Due 28 June 2016</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+          Site requirements visit <span>Due 28 June 2016</span>
+        </li>
+        <li>
+          <a href="">
+            Liaise with linked service centres <span>Due 28 June 2016</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Set up diaries in Booking Bug <span>Due 28 June 2016</span>
+          </a>
+        </li>
+        <li class="dependencies">
+          <a href="">
+            Site readiness confirmed <span>Due 28 June 2016</span>
+          </a>
+        </li>
+        <li class="dependencies">
+          <a href="">
+            Post go live review <span>Due 16 August 2016</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

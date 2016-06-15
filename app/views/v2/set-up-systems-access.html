@@ -41,7 +41,7 @@
           {% for i in range(1, 11) -%}
             <li id="item-row-{{i}}" class="item-row {% if not loop.first and not answers['item' + i] %} js-hidden {% endif %}">
 
-              <h2 class="heading-medium">Person {{i}} </h2>
+              <h2 class="heading-small">Person {{i}} </h2>
 
               {% if not loop.first %}
                 <a href="#" class="remove">Remove this</a>
@@ -111,7 +111,7 @@
         Checklist
       </h2>
 
-      <form action="task-complete" method="" class="form">
+      <form action="todo-complete-3" method="" class="form">
 
         <div class="form-group">
           <fieldset>
