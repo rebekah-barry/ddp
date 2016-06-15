@@ -67,6 +67,31 @@ img {
   }
 }
 
+// Dashboard styles
+.tag {
+  color:white !important;
+  font-weight:700;
+  padding:0.25em;
+  text-align:center;
+  text-decoration:none;
+  text-transform:uppercase;
+  background-color: $green;
+}
+.tag.done       {background-color:$govuk-blue;}
+.tag.risk       {background-color:$error-colour;}
+.tag.mitigation {background-color:$yellow;}
+
+.big_number {
+  font-size:96px;
+  font-weight:700;
+  text-align:center;
+  color: $green;
+}
+.txt-done       {color:$govuk-blue}
+.txt-risk       {color:$error-colour}
+.txt-mitigation {color:$yellow}
+
+
 // Add items to a list pattern
 .list-user-input li h2 {
   float: left;
