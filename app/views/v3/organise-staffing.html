@@ -1,0 +1,85 @@
+{% extends "layout_unbranded.html" %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Organise staffing
+        <span class="heading-secondary">
+          Overdue 121 days<br>Suggested 60 minutes to complete
+        </span>
+      </h1>
+
+      <p class="lede">
+        Our estimate says that you’ll need to train xxx full time equivalent Work Coaches to deliver Universal Credit Full Service.
+      </p>
+
+      <p>
+        This is a recommendation - you can choose a different amount depending on the needs of your Jobcentre.
+      </p>
+
+      <h2 class="heading-medium">
+        You’ll need to:
+      </h2>
+
+      <ol class="list list-number">
+        <li>
+          Decide which Work Coaches will train to deliver Universal Credit Full Service and let them know
+        </li>
+        <li>
+          Organise cover for these staff for the time they’re on training
+        </li>
+      </ol>
+
+      <p>
+        It’s up to you how you decide which Work Coaches will work on Universal Credit Full Service. You might want to ask for volunteers, or use your judgment to decide who would be confident to be trained first.
+      </p>
+
+      <h2 class="heading-medium">
+        Checklist
+      </h2>
+
+      <form action="todo-complete-1" method="" class="form">
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Checklist</legend>
+
+            <label for="step__1" class="block-label">
+              <input type="checkbox" name="step__1" value="Done" id="step__1" checked>
+              We have decided how many members of staff need to be trained
+            </label>
+
+            <label for="step__2" class="block-label">
+              <input type="checkbox" name="step__2" value="Done" id="step__2" checked>
+              We have identified which members of staff will be trained
+            </label>
+
+            <label for="step__3" class="block-label">
+              <input type="checkbox" name="step__3" value="Done" id="step__3">
+              We have let them know
+            </label>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Complete">
+        </div>
+
+      </form>
+
+
+    </div>
+    <div class="column-third">
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
