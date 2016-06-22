@@ -46,6 +46,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+  text-decoration: none;
+}
+h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
+  text-decoration: underline;;
+}
 
 // buttons
 .button {
@@ -146,10 +152,10 @@ ul.todo li {
 ul.todo li:hover {
   background-color: $panel-colour;
 }
-ul.todo li a {
+ul.todo li > a {
   text-decoration: none;
 }
-ul.todo li a:hover {
+ul.todo li > a:hover {
   text-decoration: underline;
 }
 ul.todo li span {
