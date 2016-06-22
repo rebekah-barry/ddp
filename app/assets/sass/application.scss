@@ -66,6 +66,15 @@ img {
     padding: 10px 15px 10px;
   }
 }
+.button-issue {
+  @include button($error-colour);
+
+  @include media (mobile) {
+    width: 100%;
+    padding: 10px 15px 10px;
+  }
+}
+
 
 // Dashboard styles
 .tag {
