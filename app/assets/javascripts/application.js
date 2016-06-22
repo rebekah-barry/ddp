@@ -1,3 +1,11 @@
+$("a").click(function() {
+  var dummyLink = $(this).attr("href");
+  if( dummyLink == "#" ) {
+    return false;
+  }
+});
+
+
 // Add an item to a list
 $(".add-another").click(function() {
   var dataTarget = $(this).attr('data-target');
