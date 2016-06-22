@@ -143,21 +143,19 @@ ul.todo li a {
 ul.todo li a:hover {
   text-decoration: underline;
 }
-ul.todo.detailed li {
-}
-ul.todo.detailed li span {
+ul.todo li span {
   @include core-16;
   margin-right: 5px;
   padding: 3px;
   color: $secondary-text-colour;
   text-align: center;
 }
-ul.todo.detailed li span.assigned {
+ul.todo li span.assigned {
   background: $secondary-text-colour;
   color: $highlight-colour;
   padding: 0.5em;
 }
-ul.todo.detailed li a span {
+ul.todo li a span {
   float: right;
   padding: 0;
   text-decoration: none;
@@ -169,27 +167,27 @@ ul.todo.detailed li a span {
     display: block;
   }
 }
-ul.todo.detailed li.done {
+ul.todo li.done {
   border-left: 5px solid $govuk-blue;
 }
-ul.todo.detailed li.risk {
+ul.todo li.risk {
   border-left: 5px solid $error-colour;
 
   a span {
     color: $error-colour;
   }
 }
-ul.todo.detailed li.mitigation {
+ul.todo li.mitigation {
   border-left: 5px solid $yellow;
 }
-ul.todo.detailed li.dependencies {
-  margin-left: 10px;
+ul.todo li.dependencies {
+  //margin-left: 10px;
   opacity: 0.5;
 }
-ul.todo.detailed li.dependencies:hover {
+ul.todo li.dependencies:hover {
   background-color: $highlight-colour;
 }
-ul.todo.detailed li.dependencies a {
+ul.todo li.dependencies a {
   color: inherit;
   text-decoration: none;
   cursor: default;;
