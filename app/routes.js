@@ -4,8 +4,8 @@ var router = express.Router();
 router.get('/', function (req, res) {
 
   var fs = require('fs');
-  var files = fs.readdirSync('./app/views/user-flow');
-  console.log(files);
+  //var files = fs.readdirSync('./app/views/user-flow');
+  //console.log(files);
 
   res.render('index');
 
