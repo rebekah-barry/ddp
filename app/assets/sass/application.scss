@@ -91,7 +91,6 @@ img {
 .txt-risk       {color:$error-colour}
 .txt-mitigation {color:$yellow}
 
-
 // Add items to a list pattern
 .list-user-input li h2 {
   float: left;
@@ -102,9 +101,21 @@ img {
 }
 
 // Alert patterns
+.alert-default {
+  border-color: $light-blue;
+  background-color: mix(white, $light-blue, 90%);
+}
+.alert-warning {
+  border-color: $red;
+  background-color: mix(white, $mellow-red, 90%);
+}
 .alert-success {
   border-color: $turquoise;
   background-color: mix(white, $turquoise, 90%);
+}
+.notice.long .icon {
+  margin-top: 0;
+  top: 0px;
 }
 
 // To-do pattern
