@@ -1,0 +1,41 @@
+{% extends "layout_unbranded.html" %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+      <a class="link-back" href="todo">Back</a>
+
+      <h1 class="heading-large">
+        Raise issue
+      </h1>
+
+      <form action="" method="" class="form">
+
+        <fieldset>
+          <div class="form-group">
+            <label class="form-label" for="field-1">Describe the issue</label>
+            <textarea class="form-control" id="field-1"></textarea>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <input type="submit" class="button button-issue button-save" value="Raise issue" name="raiseIssue">
+        </div>
+
+      </form>
+
+      <div id="alert-success" class="panel panel-border-wide alert-success js-hidden">
+        <p class="bold-small">
+          Issue raised
+        </p>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
