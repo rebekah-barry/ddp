@@ -137,6 +137,12 @@ ul.todo li {
 ul.todo li:hover {
   background-color: $panel-colour;
 }
+ul.todo li a {
+  text-decoration: none;
+}
+ul.todo li a:hover {
+  text-decoration: underline;
+}
 ul.todo.detailed li {
 }
 ul.todo.detailed li span {
@@ -147,14 +153,16 @@ ul.todo.detailed li span {
   text-align: center;
 }
 ul.todo.detailed li span.assigned {
-  border: 1px solid $secondary-text-colour;
-  border-radius: 3px;
+  background: $secondary-text-colour;
+  color: $highlight-colour;
+  padding: 0.5em;
 }
 ul.todo.detailed li a span {
   float: right;
   padding: 0;
   text-decoration: none;
   text-align: left;
+  cursor: default;;
 
   @include media (mobile) {
     float: none;
