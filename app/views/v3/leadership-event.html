@@ -1,0 +1,117 @@
+{% extends "layout_unbranded.html" %}
+
+{% block content %}
+<main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div id="global-breadcrumb">
+    <a class="link-back" href="todo-start">Back</a>
+	</div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Hold a site start up event
+      </h1>
+
+      <p class="lede">
+        Pre-start up activitites allow site specific information to be gathered to tailor the start up event.
+      </p>
+
+      <p>
+        A site start up event must be held at the beginning if every site’s implementation journey. The event will be 1 day and is designed to launch the implementation actions and activities. The target audience is listed in the supporting documents.
+      </p>
+
+      <p>
+        The event is key to ensuring the site smoothly transitions into the delivery of Universal Credit full service, and is the first opportunity for all parties involved in this process to become acquainted and assist early decision making.
+      </p>
+
+      <h2 class="heading-medium">
+        To-do
+      </h2>
+
+      <p>
+        Meet with local management to explain the implementation process and the support they will receive. Agenda should include:
+      </p>
+
+      <p>
+        Staffing Figures, Visual Identity , delivery area & site requirements, Risks, DDP, Site characteristics & anomalies e.g. satellite sites / peripatetic workers.
+      </p>
+
+      <p>
+        When arranging the meeting, please ensure:
+      </p>
+
+      <ul class="list list-bullet">
+        <li>
+          Room capacity capable of comfortably holding all attendees
+        </li>
+        <li>
+          DWP network capability
+        </li>
+        <li>
+          Availability of at least one workstation/laptop
+        </li>
+        <li>
+          Projector to show products to the meeting comfortably
+        </li>
+      </ul>
+
+      <h2 class="heading-medium">
+        Checklist
+      </h2>
+
+      <form action="task-complete" method="" class="form">
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visuallyhidden">Checklist</legend>
+
+            <label for="step__1" class="block-label">
+              <input type="checkbox" name="step__1" value="Done" id="step__1">
+              I have liaised with my Implementation Manager to arrange a date for delivery of the start up event
+            </label>
+
+            <label for="step__2" class="block-label">
+              <input type="checkbox" name="step__2" value="Done" id="step__2">
+              I have attended the start up event
+            </label>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Complete">
+        </div>
+
+      </form>
+
+    </div>
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Supporting content</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">
+              Site start up event product list (awaiting revised products)
+            </a></li>
+            <li><a href="#">
+              DO:04 Identify site Single Point of Contact
+            </a></li>
+            <li><a href="#">
+              The site start up event target audience
+            </a></li>
+          </ul>
+        </nav>
+        <h2 class="heading-medium" id="subsection-title">Need help</h2>
+        <a class="button button-issue" href="raise-issue">Raise issue</a>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
